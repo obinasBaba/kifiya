@@ -12,6 +12,7 @@
   --coef-size: 1; // for element width, height
   --column-width: 100vw / 64; // column width
 
+
   @media screen and (min-width: 1600px) {
     --coef-indent: 1.25;
     --coef-title: 1.25;
@@ -132,7 +133,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  background-color: $grey-dark !important;
+  background-color: white !important;
+  color: black;
 }
 
 h1,

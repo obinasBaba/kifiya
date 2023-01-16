@@ -1,7 +1,9 @@
+@use '@/styles/index.scss' as s;
+
 
 .container {
   position: fixed;
-  z-index: 10;
+  z-index: 110;
   inset: 0;
   pointer-events: none;
 
@@ -9,29 +11,42 @@
   place-items: center;
   align-content: space-between;
 
+  & * {
+    pointer-events: auto;
+  }
 
 
   & :local {
 
-    .nav_top{
+    .nav_top {
       width: 100%;
       padding: 2rem 3rem;
       display: flex;
+      align-items: center;
       justify-content: space-between;
 
-      //border: 1px solid red;
+
       //align-self: start;
 
-      .logo{
-        max-width: 6rem;
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .3rem;
+        background-color: s.$clrs-accent;
+        border-radius: .2rem;
+
+        span {
+          display: flex;
+          border: .5rem solid black;
+          border-radius: 50000px;
+          height: 1.8rem;
+          width: 1.8rem;
+        }
+
       }
 
-      .meet{
-        font-weight: 400;
-        letter-spacing: .08vmax;
-      }
-
-      .links{
+      .links {
         display: flex;
         gap: 2rem;
       }

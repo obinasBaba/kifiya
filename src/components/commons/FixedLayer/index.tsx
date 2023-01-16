@@ -5,14 +5,17 @@ import { Typography } from '@mui/material';
 import Link from 'next/link';
 
 const FixedLayer = () => {
-  const links = ['About', 'FAQs', 'Contact Us'];
+  const links = ['Home', 'About us', 'services', 'News', 'Resources'];
 
   return (
     <div className={s.container}>
       <nav className={s.nav_top}>
-        <Typography noWrap className={s.meet} variant="subtitle2">
-          MEET D EXPERTS
-        </Typography>
+        <Link href={'/'}>
+          <div className={s.logo}>
+            <span />
+            <span />
+          </div>
+        </Link>
 
         <div className={s.links}>
           {links.map((link) => (
